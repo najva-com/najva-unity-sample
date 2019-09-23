@@ -11,49 +11,21 @@
       <meta-data android:name="unityplayer.UnityActivity" android:value="true" />
 	  
     </activity>
+	
+	<meta-data
+    android:name="com.najva.sdk.metadata.API_KEY"
+    android:value="e6cb5a9c-bcad-4faf-9a4f-036a9b715307" />
+	<meta-data
+    android:name="com.najva.sdk.metadata.WEBSITE_ID"
+    android:value="6" />
     <meta-data android:name="unity.build-id" android:value="2d8d2d8d-4b15-4cfb-a006-93682b27d80f" />
     <meta-data android:name="unity.splash-mode" android:value="0" />
     <meta-data android:name="unity.splash-enable" android:value="True" />
 	<meta-data android:name="com.google.firebase.messaging.default_notification_channel_id"       
 				 android:value="@string/default_notification_channel_id "
 					tools:replace="android:value"				 /> 
- 
-	<service android:name="com.najva.najvasdk.Service.NajvaMessagingService" tools:node="remove" />
 	
-	<service android:name="com.najva.unityplugin.service.NajvaUnityService">
-		<intent-filter>
-			<action android:name="com.google.firebase.MESSAGING_EVENT" />
-		</intent-filter>
-	</service>
 	
-	<service android:name=".Service.NajvaIntentService"/>
- 
-	<receiver android:name="com.najva.najvasdk.Receiver.NetworkReceiver" >
-		<intent-filter>     
-			<action android:name="android.net.conn.CONNECTIVITY_CHANGE" />   
-		</intent-filter> 
-	</receiver> 
-	
-	<receiver android:name="com.najva.najvasdk.Receiver.InstallPackageReceiver" >   
-		<intent-filter>     
-			<action android:name="android.intent.action.PACKAGE_INSTALL" />     
-			<action android:name="android.intent.action.PACKAGE_ADDED" /> 
-			<data android:scheme="package" />   
-		</intent-filter> 
-	</receiver>
-
-	<receiver android:name="com.najva.najvasdk.Receiver.UninstallPackageReceiver" >   
-		<intent-filter> 
-			<action android:name="android.intent.action.PACKAGE_REMOVED" /> 
-			<data android:scheme="package" />   
-		</intent-filter> 
-	</receiver> 
-	
-	<receiver android:name="com.najva.najvasdk.Receiver.ChangeSimcardReceiver" >   
-		<intent-filter>    
-			<action android:name="android.intent.action.SIM_STATE_CHANGED" />   
-		</intent-filter> 
-	</receiver>   
   </application>
   <uses-feature android:glEsVersion="0x00020000" />
   <uses-permission android:name="android.permission.INTERNET" />

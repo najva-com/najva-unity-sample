@@ -8,9 +8,9 @@ namespace najva
     {
         public UserCallback() : base("com.najva.unityplugin.callback.UserCallback") { }
 
-        void najvaUserSubscribed(string token)
+        void onUserSubscribed(string token)
         {
-
+            Debug.Log("najva token callback: "+token);
         }
     }
 }

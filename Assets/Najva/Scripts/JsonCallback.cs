@@ -9,7 +9,7 @@ namespace najva
 
         void onHandleJsonData(string json)
         {
-
+			 Debug.Log(json);
         }
 
     }
