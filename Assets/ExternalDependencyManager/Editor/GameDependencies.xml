@@ -1,0 +1,7 @@
+<dependencies>
+  <androidPackages>
+    <androidPackage spec="com.najva.sdk:najva-android-sdk:1.2.3">
+    <androidPackage spec="com.google.firebase:firebase-messaging:20.1.0"/>
+    </androidPackage>
+  </androidPackages>
+</dependencies>

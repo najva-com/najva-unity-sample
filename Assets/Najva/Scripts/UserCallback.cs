@@ -10,7 +10,9 @@ namespace najva
 
         void onUserSubscribed(string token)
         {
-            Debug.Log("najva token callback: "+token);
+            Debug.Log(token);
         }
     }
+
+    
 }
